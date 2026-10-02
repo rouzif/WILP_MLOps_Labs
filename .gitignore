@@ -1,0 +1,50 @@
+# ==========================================
+# MLflow & Local Experiment Tracking
+# ==========================================
+mlflow.db
+mlruns/
+model_export/
+*.skops
+
+# ==========================================
+# Apache Airflow (Local Environment)
+# ==========================================
+airflow.db
+airflow.cfg
+airflow.webserver_config.py
+logs/
+plugins/
+*.pid
+
+# ==========================================
+# Project Pipeline Artifacts & Data
+# ==========================================
+# Exclude datasets and generated outputs
+churn_data.csv
+scored.csv
+weekly_scored.csv
+gate_failures.log
+
+# ==========================================
+# Python & Environment Virtual Envs
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+airflow_env/
+
+# ==========================================
+# OS & IDE Specific
+# ==========================================
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.tmp
